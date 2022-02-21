@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>http://198.98.59.209/home/login.php</title><link rel="stylesheet" type="text/css" href="resource://content-accessible/viewsource.css"></head><body id="viewsource" class="wrap highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
+<span id="line2"></span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+<span id="line3"></span></span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line4"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">utf-8</a>"&gt;</span><span>
+<span id="line5"></span>	</span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">http-equiv</span>="<a class="attribute-value">X-UA-Compatible</a>" <span class="attribute-name">content</span>="<a class="attribute-value">IE=edge</a>"&gt;</span><span>
+<span id="line6"></span>	</span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>路人DDOS平台 - 登录</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line7"></span>	</span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">description</a>" <span class="attribute-name">content</span>="<a class="attribute-value">路人DDOS平台|ddos网页端|ddos平台|ddos软件|ddos网站|ddos攻击器</a>"&gt;</span><span>
+<span id="line8"></span>	</span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">keywords</a>" <span class="attribute-name">content</span>="<a class="attribute-value">DDOS平台|DDOS平台|DDOS网页端|DDOS网页版|国内DDOS平台|DDOS|免费DDOS平台|国内DDOS网页端|DDOS软件|国外DDOS网页端|DDOS测试|DDOS测试|DDOS测试器|DDOS测试教程|DDOS测试工具|DDOS测试软件| DDOS平台测试|DDOS攻击</a>"&gt;</span><span>
+<span id="line9"></span>	</span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">author</a>" <span class="attribute-name">content</span>="<a class="attribute-value">DDOS平台|DDOS平台|DDOS网页端|DDOS网页版|国内DDOS平台|DDOS|免费DDOS平台|国内DDOS网页端|DDOS软件|国外DDOS网页端|DDOS测试|DDOS测试|DDOS测试器|DDOS测试教程|DDOS测试工具|DDOS测试软件| DDOS平台测试|DDOS攻击</a>"&gt;</span><span>
+<span id="line10"></span>	</span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">content</span>='<a class="attribute-value">width=device-width, initial-scale=1.0, shrink-to-fit=no</a>' <span class="attribute-name">name</span>='<a class="attribute-value">viewport</a>'&gt;</span><span>
+<span id="line11"></span>	
+<span id="line12"></span>
+<span id="line13"></span>	</span><span class="comment">&lt;!-- Fonts and icons --&gt;</span><span>
+<span id="line14"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/plugin/webfont/webfont.min.js">../assets/js/plugin/webfont/webfont.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line15"></span>	</span><span>&lt;<span class="start-tag">script</span>&gt;</span><span>
+<span id="line16"></span>		WebFont.load({
+<span id="line17"></span>			google: {"families":["Lato:300,400,700,900"]},
+<span id="line18"></span>			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+<span id="line19"></span>			active: function() {
+<span id="line20"></span>				sessionStorage.fonts = true;
+<span id="line21"></span>			}
+<span id="line22"></span>		});
+<span id="line23"></span>	</span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line24"></span>	
+<span id="line25"></span>	</span><span class="comment">&lt;!-- CSS Files --&gt;</span><span>
+<span id="line26"></span>	</span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/css/bootstrap.min.css">../assets/css/bootstrap.min.css</a>"&gt;</span><span>
+<span id="line27"></span>	</span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/css/atlantis.css">../assets/css/atlantis.css</a>"&gt;</span><span>
+<span id="line28"></span>	</span><span class="comment">&lt;!-- CSS geetest --&gt;</span><span>
+<span id="line29"></span>	</span><span>&lt;<span class="start-tag">style</span>&gt;</span><span>
+<span id="line30"></span>	    #embed-captcha {
+<span id="line31"></span>            width: 300px;
+<span id="line32"></span>            margin: 0 auto;
+<span id="line33"></span>        }
+<span id="line34"></span>	    #embed-captcha-1 {
+<span id="line35"></span>            width: 300px;
+<span id="line36"></span>            margin: 0 auto;
+<span id="line37"></span>        }
+<span id="line38"></span>	    .show {
+<span id="line39"></span>            display: block;
+<span id="line40"></span>        }
+<span id="line41"></span>        .hide {
+<span id="line42"></span>            display: none;
+<span id="line43"></span>        }
+<span id="line44"></span>        #notice {
+<span id="line45"></span>            color: red;
+<span id="line46"></span>        }
+<span id="line47"></span>	</span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+<span id="line48"></span></span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line49"></span></span><span>&lt;<span class="start-tag">body</span> <span class="attribute-name">class</span>="<a class="attribute-value">login</a>"&gt;</span><span>
+<span id="line50"></span>	</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">wrapper wrapper-login</a>"&gt;</span><span>
+<span id="line51"></span>		</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">container container-login animated fadeIn</a>"&gt;</span><span>
+<span id="line52"></span>			</span><span>&lt;<span class="start-tag">h3</span> <span class="attribute-name">class</span>="<a class="attribute-value">text-center</a>"&gt;</span><span>路人DDOS平台</span><span>&lt;/<span class="end-tag">h3</span>&gt;</span><span>
+<span id="line53"></span>						</span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">class</span>="<a class="attribute-value">login-form</a>" <span class="attribute-name">method</span>="<a class="attribute-value">post</a>" <span class="attribute-name">novalidate</span>="<a class="attribute-value">novalidate</a>"&gt;</span><span>
+<span id="line54"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line55"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">username</a>" <span class="attribute-name">name</span>="<a class="attribute-value">username</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line56"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">username</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>用户名</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line57"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line58"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line59"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">password</a>" <span class="attribute-name">name</span>="<a class="attribute-value">password</a>" <span class="attribute-name">type</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line60"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>密码</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line61"></span>					</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">show-password</a>"&gt;</span><span>
+<span id="line62"></span>						</span><span>&lt;<span class="start-tag">i</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-eye</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line63"></span>					</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line64"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line65"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">row form-sub m-0</a>"&gt;</span><span>
+<span id="line66"></span>					</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">custom-control custom-checkbox</a>"&gt;</span><span>
+<span id="line67"></span>						</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">checkbox</a>" <span class="attribute-name">check</span>="<a class="attribute-value">true</a>" <span class="attribute-name">class</span>="<a class="attribute-value">custom-control-input</a>" <span class="attribute-name">id</span>="<a class="attribute-value">rememberme</a>"&gt;</span><span>
+<span id="line68"></span>						</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">class</span>="<a class="attribute-value">custom-control-label</a>" <span class="attribute-name">for</span>="<a class="attribute-value">rememberme</a>"&gt;</span><span>记住我</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line69"></span>					</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line70"></span>					
+<span id="line71"></span>					</span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/home/findpwd.php">../home/findpwd.php</a>" <span class="attribute-name">class</span>="<a class="attribute-value">link float-right</a>"&gt;</span><span>忘记密码?</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line72"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line73"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-action mb-3</a>"&gt;</span><span>
+<span id="line74"></span>				</span><span>&lt;<span class="start-tag">button</span> <span class="attribute-name">id</span>="<a class="attribute-value">Login</a>" <span class="attribute-name">name</span>="<a class="attribute-value">Login</a>" <span class="attribute-name">value</span>="<a class="attribute-value">login</a>" <span class="attribute-name">class</span>="<a class="attribute-value">btn btn-primary btn-rounded btn-login</a>"&gt;</span><span>登录</span><span>&lt;/<span class="end-tag">button</span>&gt;</span><span>
+<span id="line75"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line76"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">login-account</a>"&gt;</span><span>
+<span id="line77"></span>					</span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">msg</a>"&gt;</span><span>还没有账号?</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+<span id="line78"></span>					</span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/home/login.php#">#</a>" <span class="attribute-name">id</span>="<a class="attribute-value">show-signup</a>" <span class="attribute-name">class</span>="<a class="attribute-value">link</a>"&gt;</span><span>立即注册</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line79"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line80"></span>			</span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line81"></span>		</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line82"></span>
+<span id="line83"></span>		</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">container container-signup animated fadeIn</a>"&gt;</span><span>
+<span id="line84"></span>			</span><span>&lt;<span class="start-tag">h3</span> <span class="attribute-name">class</span>="<a class="attribute-value">text-center</a>"&gt;</span><span>注册</span><span>&lt;/<span class="end-tag">h3</span>&gt;</span><span>
+<span id="line85"></span>						</span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">class</span>="<a class="attribute-value">login-form</a>" <span class="attribute-name">method</span>="<a class="attribute-value">post</a>" <span class="attribute-name">novalidate</span>="<a class="attribute-value">novalidate</a>"&gt;</span><span>
+<span id="line86"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line87"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">username</a>" <span class="attribute-name">name</span>="<a class="attribute-value">username</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line88"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">username</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>用户名</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line89"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line90"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line91"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">email</a>" <span class="attribute-name">name</span>="<a class="attribute-value">email</a>" <span class="attribute-name">type</span>="<a class="attribute-value">email</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line92"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">email</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>邮箱</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line93"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line94"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line95"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">qq</a>" <span class="attribute-name">name</span>="<a class="attribute-value">qq</a>" <span class="attribute-name">type</span>="<a class="attribute-value">qq</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line96"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">qq</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>QQ</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line97"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line98"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line99"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">scode</a>" <span class="attribute-name">name</span>="<a class="attribute-value">scode</a>" <span class="attribute-name">type</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line100"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">scode</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>安全码</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line101"></span>					</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">show-password</a>"&gt;</span><span>
+<span id="line102"></span>						</span><span>&lt;<span class="start-tag">i</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-eye</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line103"></span>					</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line104"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line105"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line106"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">password</a>" <span class="attribute-name">name</span>="<a class="attribute-value">password</a>" <span class="attribute-name">type</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line107"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>密码</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line108"></span>					</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">show-password</a>"&gt;</span><span>
+<span id="line109"></span>						</span><span>&lt;<span class="start-tag">i</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-eye</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line110"></span>					</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line111"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line112"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line113"></span>					</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">id</span>="<a class="attribute-value">password2</a>" <span class="attribute-name">name</span>="<a class="attribute-value">password2</a>" <span class="attribute-name">type</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control input-border-bottom</a>" <span class="attribute-name">required</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line114"></span>					</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">password2</a>" <span class="attribute-name">class</span>="<a class="attribute-value">placeholder</a>"&gt;</span><span>重复密码</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line115"></span>					</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">show-password</a>"&gt;</span><span>
+<span id="line116"></span>						</span><span>&lt;<span class="start-tag">i</span> <span class="attribute-name">class</span>="<a class="attribute-value">icon-eye</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">i</span>&gt;</span><span>
+<span id="line117"></span>					</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line118"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line119"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-group form-floating-label</a>"&gt;</span><span>
+<span id="line120"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">embed-captcha</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line121"></span>    				</span><span>&lt;<span class="start-tag">p</span> <span class="attribute-name">id</span>="<a class="attribute-value">wait</a>" <span class="attribute-name">class</span>="<a class="attribute-value">show</a>"&gt;</span><span>正在加载验证码......</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line122"></span>					</span><span>&lt;<span class="start-tag">p</span> <span class="attribute-name">id</span>="<a class="attribute-value">notice</a>" <span class="attribute-name">class</span>="<a class="attribute-value">hide</a>"&gt;</span><span>请先完成验证</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line123"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line124"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">row form-sub m-0</a>"&gt;</span><span>
+<span id="line125"></span>					</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">custom-control custom-checkbox</a>"&gt;</span><span>
+<span id="line126"></span>						</span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">checkbox</a>" <span class="attribute-name">class</span>="<a class="attribute-value">custom-control-input</a>" <span class="attribute-name">name</span>="<a class="attribute-value">agree</a>" <span class="attribute-name">id</span>="<a class="attribute-value">agree</a>"&gt;</span><span>
+<span id="line127"></span>						</span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">class</span>="<a class="attribute-value">custom-control-label</a>" <span class="attribute-name">for</span>="<a class="attribute-value">agree</a>"&gt;</span><span>我同意这些条款和条件</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line128"></span>					</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line129"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line130"></span>				</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-action</a>"&gt;</span><span>
+<span id="line131"></span>					</span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/home/login.php#">#</a>" <span class="attribute-name">id</span>="<a class="attribute-value">show-signin</a>" <span class="attribute-name">class</span>="<a class="attribute-value">btn btn-danger btn-link btn-login mr-3</a>"&gt;</span><span>已有账号</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line132"></span>					</span><span>&lt;<span class="start-tag">button</span> <span class="attribute-name">id</span>="<a class="attribute-value">register</a>" <span class="attribute-name">name</span>="<a class="attribute-value">register</a>" <span class="attribute-name">value</span>="<a class="attribute-value">create</a>" <span class="attribute-name">class</span>="<a class="attribute-value">btn btn-primary btn-rounded btn-login</a>"&gt;</span><span>注册</span><span>&lt;/<span class="end-tag">button</span>&gt;</span><span>
+<span id="line133"></span>				</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line134"></span>			</span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line135"></span>		</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line136"></span>	</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line137"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/plugin/sweetalert/sweetalert.min.js">../assets/js/plugin/sweetalert/sweetalert.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line138"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/gt.js">../assets/js/gt.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line139"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/core/jquery.3.2.1.min.js">../assets/js/core/jquery.3.2.1.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line140"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js">../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line141"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/core/popper.min.js">../assets/js/core/popper.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line142"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/core/bootstrap.min.js">../assets/js/core/bootstrap.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line143"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://198.98.59.209/assets/js/atlantis.min.js">../assets/js/atlantis.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line144"></span>	</span><span>&lt;<span class="start-tag">script</span>&gt;</span><span>
+<span id="line145"></span>    var handlerEmbed = function (captchaObj) {
+<span id="line146"></span>        $("#register").click(function (e) {
+<span id="line147"></span>            var validate = captchaObj.getValidate();
+<span id="line148"></span>            if (!validate) {
+<span id="line149"></span>                $("#notice")[0].className = "show";
+<span id="line150"></span>                setTimeout(function () {
+<span id="line151"></span>                    $("#notice")[0].className = "hide";
+<span id="line152"></span>                }, 2000);
+<span id="line153"></span>                e.preventDefault();
+<span id="line154"></span>            }
+<span id="line155"></span>        });
+<span id="line156"></span>        // 将验证码加到id为captcha的元素里，同时会有三个input的值：geetest_challenge, geetest_validate, geetest_seccode
+<span id="line157"></span>        captchaObj.appendTo("#embed-captcha");
+<span id="line158"></span>        captchaObj.onReady(function () {
+<span id="line159"></span>            $("#wait")[0].className = "hide";
+<span id="line160"></span>        });
+<span id="line161"></span>    };
+<span id="line162"></span>    $.ajax({
+<span id="line163"></span>        // 获取id，challenge，success（是否启用failback）
+<span id="line164"></span>        url: "../includes/geetest/web/StartCaptchaServlet.php?t=" + (new Date()).getTime(), // 加随机数防止缓存
+<span id="line165"></span>        type: "get",
+<span id="line166"></span>        dataType: "json",
+<span id="line167"></span>        success: function (data) {
+<span id="line168"></span>            console.log(data);
+<span id="line169"></span>            // 使用initGeetest接口
+<span id="line170"></span>            // 参数1：配置参数
+<span id="line171"></span>            // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+<span id="line172"></span>            initGeetest({
+<span id="line173"></span>                gt: data.gt,
+<span id="line174"></span>                challenge: data.challenge,
+<span id="line175"></span>                new_captcha: data.new_captcha,
+<span id="line176"></span>                product: "embed", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+<span id="line177"></span>                offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+<span id="line178"></span>            }, handlerEmbed);
+<span id="line179"></span>        }
+<span id="line180"></span>    });
+<span id="line181"></span>	</span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line182"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line183"></span>       $(function(){
+<span id="line184"></span>            var regBtn = $("#register");
+<span id="line185"></span>            $("#agree").change(function(){
+<span id="line186"></span>                var checkedValue = $("#agree").prop("checked");
+<span id="line187"></span>                if(checkedValue){
+<span id="line188"></span>                    regBtn.prop("disabled",false);
+<span id="line189"></span>                    regBtn.css("background","#078E18");
+<span id="line190"></span>					swal({
+<span id="line191"></span>						title: "Good!",
+<span id="line192"></span>						text: "您同意了我们,的服务条款!",
+<span id="line193"></span>						icon: "success",
+<span id="line194"></span>						buttons: {
+<span id="line195"></span>							confirm: {
+<span id="line196"></span>								text: "确认",
+<span id="line197"></span>								value: true,
+<span id="line198"></span>								visible: true,
+<span id="line199"></span>								className: "btn btn-success",
+<span id="line200"></span>								closeModal: true
+<span id="line201"></span>							}
+<span id="line202"></span>						}
+<span id="line203"></span>					});
+<span id="line204"></span>                }else{
+<span id="line205"></span>                    regBtn.prop("disabled",true);
+<span id="line206"></span>                    regBtn.css("background","#909090");
+<span id="line207"></span>                }
+<span id="line208"></span>            });
+<span id="line209"></span>        });
+<span id="line210"></span>	</span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line211"></span></span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line212"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Go to Line…" accesskey="L"></menuitem><menuitem id="wrapLongLines" label="Wrap Long Lines" type="checkbox" checked="true"></menuitem><menuitem id="highlightSyntax" label="Syntax Highlighting" type="checkbox" checked="true"></menuitem></menu></body></html>
