@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>http://tt.6dds.cc/login</title><link rel="stylesheet" type="text/css" href="resource://content-accessible/viewsource.css"></head><body id="viewsource" class="wrap highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
+<span id="line2"></span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+<span id="line3"></span></span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line4"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">utf-8</a>"&gt;</span><span>
+<span id="line5"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">http-equiv</span>="<a class="attribute-value">X-UA-Compatible</a>" <span class="attribute-name">content</span>="<a class="attribute-value">IE=edge</a>"&gt;</span><span>
+<span id="line6"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">viewport</a>" <span class="attribute-name">content</span>="<a class="attribute-value">width=device-width, initial-scale=1</a>"&gt;</span><span>
+<span id="line7"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">csrf-token</a>" <span class="attribute-name">content</span>="<a class="attribute-value">Wv8wdKNMgCHeHlpgs9mh65ARzTgBi1XREKZfMtPA</a>"&gt;</span><span>
+<span id="line8"></span></span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">google-site-verification</a>" <span class="attribute-name">content</span>="<a class="attribute-value">FsN8uEN9onhZHY8WEWhbmVIvXlK4njiNbY_HsoNuNKs</a>" <span>/</span>&gt;</span><span>
+<span id="line9"></span>            </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>安全评测</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line10"></span>                </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">description</a>"
+<span id="line11"></span>              <span class="attribute-name">content</span>="<a class="attribute-value">安全评测</a>"&gt;</span><span>
+<span id="line12"></span>                </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">keywords</a>"
+<span id="line13"></span>              <span class="attribute-name">content</span>="<a class="attribute-value">vienblog,vienblog.com,blog,markdown,laravel,laravel blog,markdown blog</a>"&gt;</span><span>
+<span id="line14"></span>        </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">viewport</a>" <span class="attribute-name">content</span>="<a class="attribute-value">width=device-width, initial-scale=1</a>"&gt;</span><span>
+<span id="line15"></span>
+<span id="line16"></span>    
+<span id="line17"></span>    
+<span id="line18"></span>    
+<span id="line19"></span>
+<span id="line20"></span></span><span class="comment">&lt;!-- Fonts --&gt;</span><span>
+<span id="line21"></span>    
+<span id="line22"></span>    
+<span id="line23"></span>
+<span id="line24"></span></span><span class="comment">&lt;!-- Styles --&gt;</span><span>
+<span id="line25"></span>    
+<span id="line26"></span>    
+<span id="line27"></span>    
+<span id="line28"></span>            </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/css/web.css">/css/web.css</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>"<span>/</span>&gt;</span><span>
+<span id="line29"></span>
+<span id="line30"></span>        </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/css/gray.css">/css/gray.css</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>"<span>/</span>&gt;</span><span>
+<span id="line31"></span>            </span><span>&lt;<span class="start-tag">style</span>&gt;</span><span>
+<span id="line32"></span>        :root {
+<span id="line33"></span>            --input-padding-x: .75rem;
+<span id="line34"></span>            --input-padding-y: .75rem;
+<span id="line35"></span>        }
+<span id="line36"></span>
+<span id="line37"></span>        html,
+<span id="line38"></span>        body {
+<span id="line39"></span>            height: 100%;
+<span id="line40"></span>        }
+<span id="line41"></span>
+<span id="line42"></span>        body {
+<span id="line43"></span>            display: -ms-flexbox;
+<span id="line44"></span>            display: -webkit-box;
+<span id="line45"></span>            display: flex;
+<span id="line46"></span>            -ms-flex-align: center;
+<span id="line47"></span>            -ms-flex-pack: center;
+<span id="line48"></span>            -webkit-box-align: center;
+<span id="line49"></span>            align-items: center;
+<span id="line50"></span>            -webkit-box-pack: center;
+<span id="line51"></span>            justify-content: center;
+<span id="line52"></span>            padding-top: 40px;
+<span id="line53"></span>            padding-bottom: 40px;
+<span id="line54"></span>            background-color: #f5f5f5;
+<span id="line55"></span>        }
+<span id="line56"></span>
+<span id="line57"></span>        .form-signin {
+<span id="line58"></span>            width: 100%;
+<span id="line59"></span>            max-width: 420px;
+<span id="line60"></span>            padding: 15px;
+<span id="line61"></span>            margin: 0 auto;
+<span id="line62"></span>        }
+<span id="line63"></span>
+<span id="line64"></span>        .form-label-group {
+<span id="line65"></span>            position: relative;
+<span id="line66"></span>            margin-bottom: 1rem;
+<span id="line67"></span>        }
+<span id="line68"></span>
+<span id="line69"></span>        .form-label-group &gt; input,
+<span id="line70"></span>        .form-label-group &gt; label {
+<span id="line71"></span>            padding: var(--input-padding-y) var(--input-padding-x);
+<span id="line72"></span>        }
+<span id="line73"></span>
+<span id="line74"></span>        .form-label-group &gt; label {
+<span id="line75"></span>            position: absolute;
+<span id="line76"></span>            top: 0;
+<span id="line77"></span>            left: 0;
+<span id="line78"></span>            display: block;
+<span id="line79"></span>            width: 100%;
+<span id="line80"></span>            margin-bottom: 0; /* Override default `</span><span>&lt;</span><span>label&gt;` margin */
+<span id="line81"></span>            line-height: 1.5;
+<span id="line82"></span>            color: #495057;
+<span id="line83"></span>            border: 1px solid transparent;
+<span id="line84"></span>            border-radius: .25rem;
+<span id="line85"></span>            transition: all .1s ease-in-out;
+<span id="line86"></span>        }
+<span id="line87"></span>
+<span id="line88"></span>        .form-label-group input::-webkit-input-placeholder {
+<span id="line89"></span>            color: transparent;
+<span id="line90"></span>        }
+<span id="line91"></span>
+<span id="line92"></span>        .form-label-group input:-ms-input-placeholder {
+<span id="line93"></span>            color: transparent;
+<span id="line94"></span>        }
+<span id="line95"></span>
+<span id="line96"></span>        .form-label-group input::-ms-input-placeholder {
+<span id="line97"></span>            color: transparent;
+<span id="line98"></span>        }
+<span id="line99"></span>
+<span id="line100"></span>        .form-label-group input::-moz-placeholder {
+<span id="line101"></span>            color: transparent;
+<span id="line102"></span>        }
+<span id="line103"></span>
+<span id="line104"></span>        .form-label-group input::placeholder {
+<span id="line105"></span>            color: transparent;
+<span id="line106"></span>        }
+<span id="line107"></span>
+<span id="line108"></span>        .form-label-group input:not(:placeholder-shown) {
+<span id="line109"></span>            padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+<span id="line110"></span>            padding-bottom: calc(var(--input-padding-y) / 3);
+<span id="line111"></span>        }
+<span id="line112"></span>
+<span id="line113"></span>        .form-label-group input:not(:placeholder-shown) ~ label {
+<span id="line114"></span>            padding-top: calc(var(--input-padding-y) / 3);
+<span id="line115"></span>            padding-bottom: calc(var(--input-padding-y) / 3);
+<span id="line116"></span>            font-size: 12px;
+<span id="line117"></span>            color: #777;
+<span id="line118"></span>        }
+<span id="line119"></span>
+<span id="line120"></span>    </span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+<span id="line121"></span>                
+<span id="line122"></span></span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line123"></span></span><span class="error" title="“meta” element between “head” and “body”.">&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">google-site-verification</a>" <span class="attribute-name">content</span>="<a class="attribute-value">5YPF3i3HZ7ZgiX7nt5BbAfslkc04Xn_tPw8R2lwHcwE</a>" <span>/</span>&gt;</span><span>
+<span id="line124"></span></span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
+<span id="line125"></span>
+<span id="line126"></span>    </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-signin</a>" <span class="attribute-name">method</span>="<a class="attribute-value">post</a>" <span class="attribute-name">action</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/login">http://tt.6dds.cc/login</a>"&gt;</span><span>
+<span id="line127"></span>        </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">_token</a>" <span class="attribute-name">value</span>="<a class="attribute-value">Wv8wdKNMgCHeHlpgs9mh65ARzTgBi1XREKZfMtPA</a>"&gt;</span><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">text-center mb-4</a>"&gt;</span><span>
+<span id="line128"></span>            </span><span>&lt;<span class="start-tag">h1</span> <span class="attribute-name">class</span>="<a class="attribute-value">h3 mb-3 font-weight-normal</a>"&gt;</span><span>欢迎登录 Vien Blog</span><span>&lt;/<span class="end-tag">h1</span>&gt;</span><span>
+<span id="line129"></span>            </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/register">http://tt.6dds.cc/register</a>"&gt;</span><span>还没有账号? 点此注册</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span class="error" title="No “p” element in scope but a “p” end tag seen.">&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line130"></span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line131"></span>
+<span id="line132"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-label-group</a>"&gt;</span><span>
+<span id="line133"></span>            </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">email</a>" <span class="attribute-name">id</span>="<a class="attribute-value">email</a>" <span class="attribute-name">name</span>="<a class="attribute-value">email</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control form-control-lg</a>" <span class="attribute-name">placeholder</span>="<a class="attribute-value">Email address</a>"
+<span id="line134"></span>                   <span class="attribute-name">value</span>="<a class="attribute-value"></a>" <span class="attribute-name">required</span> <span class="attribute-name">autofocus</span>&gt;</span><span>
+<span id="line135"></span>            </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">email</a>"&gt;</span><span>Email address</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line136"></span>                    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line137"></span>
+<span id="line138"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-label-group</a>"&gt;</span><span>
+<span id="line139"></span>            </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">password</a>" <span class="attribute-name">id</span>="<a class="attribute-value">password</a>" <span class="attribute-name">name</span>="<a class="attribute-value">password</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control form-control-lg</a>" <span class="attribute-name">placeholder</span>="<a class="attribute-value">Password</a>"
+<span id="line140"></span>                   <span class="attribute-name">value</span>="<a class="attribute-value"></a>" <span class="attribute-name">required</span>&gt;</span><span>
+<span id="line141"></span>                        </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">password</a>"&gt;</span><span>Password</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line142"></span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line143"></span>
+<span id="line144"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">checkbox mb-3</a>"&gt;</span><span>
+<span id="line145"></span>            </span><span>&lt;<span class="start-tag">label</span>&gt;</span><span>
+<span id="line146"></span>                </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">checkbox</a>" <span class="attribute-name">value</span>="<a class="attribute-value">remember-me</a>" <span class="attribute-name">name</span>="<a class="attribute-value">remember</a>" <span class="attribute-name">id</span>="<a class="attribute-value">remember</a>" &gt;</span><span> 记住我
+<span id="line147"></span>            </span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line148"></span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line149"></span>        </span><span>&lt;<span class="start-tag">button</span> <span class="attribute-name">class</span>="<a class="attribute-value">btn btn-lg btn-primary btn-block</a>" <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>"&gt;</span><span>登录</span><span>&lt;/<span class="end-tag">button</span>&gt;</span><span>
+<span id="line150"></span>        </span><span>&lt;<span class="start-tag">p</span> <span class="attribute-name">class</span>="<a class="attribute-value">mt-5 mb-3 text-muted text-center</a>"&gt;</span><span><span class="entity"><span>&amp;</span>copy;</span> 2022 </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://vienblog.com/">https://vienblog.com</a>"&gt;</span><span>vienblog.com</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span> </span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line151"></span>    </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line152"></span>
+<span id="line153"></span>    
+<span id="line154"></span></span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line155"></span>    </span><span class="comment">&lt;!-- Scripts --&gt;</span><span>
+<span id="line156"></span>    </span><span class="error" title="Stray start tag “script”.">&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/js/web.js">/js/web.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line157"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/js/jquery.lazyload.min.js">http://tt.6dds.cc/js/jquery.lazyload.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line158"></span>    </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://tt.6dds.cc/js/jquery.scrollstop.min.js">http://tt.6dds.cc/js/jquery.scrollstop.min.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line159"></span>    </span><span>&lt;<span class="start-tag">script</span>&gt;</span><span>
+<span id="line160"></span>        $("img.lazyload").lazyload({
+<span id="line161"></span>            threshold: 600,
+<span id="line162"></span>            effect: "fadeIn",
+<span id="line163"></span>            failure_limit: 20,
+<span id="line164"></span>            skip_invisible: false
+<span id="line165"></span>        });
+<span id="line166"></span>    </span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line167"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span>
+<span id="line168"></span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Go to Line…" accesskey="L"></menuitem><menuitem id="wrapLongLines" label="Wrap Long Lines" type="checkbox" checked="true"></menuitem><menuitem id="highlightSyntax" label="Syntax Highlighting" type="checkbox" checked="true"></menuitem></menu></body></html>
